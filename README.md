@@ -5,6 +5,7 @@ Simple recommendation to follow that will make your css easy to maintain alone o
 #### Never use id for styling
 Not reusable and the specificity is too strong. Only using class means narrow down the whole css to only one "weight". 
 
+
 #### Use Js-hook
 Prefix class with "js-" if it is used in js file. It is good practice to not have a class use for both css and js files.
 ```
@@ -12,8 +13,10 @@ Prefix class with "js-" if it is used in js file. It is good practice to not hav
 btn is use in for styling. js-open-menu trigger the function that open the menu
 ```
 
+
 #### Avoid !important
 Try to not use !important. Beside exception, the use of this property is usually selfish. It remove the css power of specifiy. If there is workaround to not use !important then it is better to spend time on it. You and your teamate will thank you in a near future.
+
 
 #### Avoid styling on a native tag
 Better create a class and affect the style to it. This way the markeup can be changed without having to touch any css files.
@@ -29,6 +32,7 @@ CSS
 
 ```
 
+
 #### Keep specificity as flat as possible
 The less specifity the easier the css will be to maintain.
 ```
@@ -37,6 +41,7 @@ The less specifity the easier the css will be to maintain.
 }
 sadly can be only overwrite by having a 6th class level 
 ```
+
 
 ####Prefer multiligne css than monoline
 Even if it is true that monoline css make the file less long and give the impression to have all the property in a glance. It become quickly very hard to read when it has more than 3-4 property (even worse when it involve browser prefix ).
@@ -52,6 +57,7 @@ Better to make it multiline, easier for developer to read. Mification plugin wil
 	border-bottom: 1px solid #CCC; 
 }
 ```
+
 
 ####Order the property by type
 A css rule sometimes contains lots of property. Agreeing on some categorisation can make it more clear :
@@ -85,6 +91,7 @@ A css rule sometimes contains lots of property. Agreeing on some categorisation 
 }
 ```
 
+
 ####Modularity
 When writing css, it is good to keep in mind and make the component modular. Meaning moving it from a layout to another should not break its style.
 
@@ -105,7 +112,7 @@ It keep the css flat.
 It makes the css not tag related.
 Garanty modularity.
 
-[https://css-tricks.com/bem-101/]
+https://css-tricks.com/bem-101/
 
 ```
 HTML
@@ -131,6 +138,7 @@ Explanation
 ```
 
 Even if the naming looks lengthy to write at first sight. It become a lot more easier with Sass and its &:
+```
 .card{
 
 	&__title{}
@@ -142,7 +150,7 @@ Even if the naming looks lengthy to write at first sight. It become a lot more e
 
 	&--border{}
 }
-
+```
 
 
 
