@@ -36,8 +36,9 @@ also too dependent meaning easy to break...
 
 
 #### Use Js-hook
-No need to use prefix for all class that is used in js but if the class is created without intention of styling then it is better to prefix the class with "js-". 
+If the class is created without intention of styling then it is better to prefix the class with "js-". 
 By doing this, we lower the chance to break functionality during css refactoring for example.
+One golden rule is to NEVER style this class.
 ```
 <a href="#" class="btn btn js-open-menu">Open</a> 
 ```
